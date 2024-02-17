@@ -1103,6 +1103,8 @@ See also :ref:`NOTIFICATION_MOUSE_EXIT_SELF<class_Control_constant_NOTIFICATION_
 
 **NOTIFICATION_MOUSE_ENTER_SELF** = ``60``
 
+**Experimental:** This constant may be changed or removed in future versions.
+
 Sent when the mouse cursor enters the control's visible area, that is not occluded behind other Controls or Windows, provided its :ref:`mouse_filter<class_Control_property_mouse_filter>` lets the event reach it and regardless if it's currently focused or not.
 
 \ **Note:** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` doesn't affect which Control receives the notification.
@@ -1114,6 +1116,8 @@ See also :ref:`NOTIFICATION_MOUSE_ENTER<class_Control_constant_NOTIFICATION_MOUS
 .. rst-class:: classref-constant
 
 **NOTIFICATION_MOUSE_EXIT_SELF** = ``61``
+
+**Experimental:** This constant may be changed or removed in future versions.
 
 Sent when the mouse cursor leaves the control's visible area, that is not occluded behind other Controls or Windows, provided its :ref:`mouse_filter<class_Control_property_mouse_filter>` lets the event reach it and regardless if it's currently focused or not.
 
@@ -1267,9 +1271,9 @@ Anchors the top edge of the node to the origin, the center or the end of its par
 - void **set_auto_translate** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_auto_translating** **(** **)**
 
-Toggles if any text should automatically change to its translated version depending on the current locale.
+**Deprecated:** Use :ref:`Node.auto_translate_mode<class_Node_property_auto_translate_mode>` instead.
 
-Also decides if the node's strings should be parsed for POT generation.
+Toggles if any text should automatically change to its translated version depending on the current locale.
 
 .. rst-class:: classref-item-separator
 
